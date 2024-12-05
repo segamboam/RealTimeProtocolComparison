@@ -1,0 +1,193 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente utilizada para el texto */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #e0e0e0; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilo para la sección principal (part1) */
+#part1 {
+    display: grid; /* Utiliza un diseño de cuadrícula */
+    grid-template-columns: 2fr 1fr; /* Dos columnas, la primera más ancha */
+    gap: 20px; /* Espacio entre columnas */
+    background-color: #1e1e1e; /* Color de fondo de la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio inferior */
+    border: 1px solid #333; /* Borde de la sección */
+}
+
+/* Estilo para el contenedor de opciones */
+#options {
+    display: flex; /* Utiliza un diseño flexible */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+/* Estilo para el estado */
+#state {
+    display: flex; /* Utiliza un diseño flexible */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+}
+
+/* Estilo para las secciones secundarias (part2 y part3) */
+#part2, #part3 {
+    background-color: #1e1e1e; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio inferior */
+    border: 1px solid #333; /* Borde */
+}
+
+/* Estilo específico para la sección part3 */
+#part3 {
+    display: grid; /* Utiliza un diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilo para el canal de datos */
+#data-channel {
+    min-height: 300px; /* Altura mínima */
+}
+
+/* Estilo para el canal de datos y SDP */
+#data-channel, #SDP {
+    background-color: #2a2a2a; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    display: flex; /* Utiliza un diseño flexible */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+/* Estilo específico para SDP */
+#SDP {
+    min-height: 300px; /* Altura mínima */
+}
+
+/* Estilo para los encabezados h2 */
+h2 {
+    color: #4a90e2; /* Color del texto */
+    border-bottom: 2px solid #4a90e2; /* Línea inferior */
+    padding-bottom: 10px; /* Espaciado inferior */
+    margin-top: 0; /* Sin margen superior */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo para las opciones */
+.option {
+    display: flex; /* Utiliza un diseño flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 15px; /* Espacio inferior */
+    gap: 10px; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+/* Estilo para las etiquetas dentro de las opciones */
+.option label {
+    margin-right: 10px; /* Espacio a la derecha */
+    color: #e0e0e0; /* Color del texto */
+}
+
+/* Estilo para los checkboxes */
+.option input[type="checkbox"] {
+    margin-right: 10px; /* Espacio a la derecha */
+    accent-color: #4a90e2; /* Color del checkbox */
+}
+
+/* Estilo para selectores y checkboxes */
+select, input[type="checkbox"] {
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #444; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #2a2a2a; /* Color de fondo */
+    color: #e0e0e0; /* Color del texto */
+}
+
+/* Estilo para botones */
+button {
+    background-color: #4a90e2; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Estilo para el efecto hover en botones */
+button:hover {
+    background-color: #357abd; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para el contenedor de medios */
+#media {
+    display: flex; /* Utiliza un diseño flexible */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para videos y audios */
+#video, #audio {
+    width: 640px; /* Ancho fijo */
+    height: 480px; /* Altura fija */
+    object-fit: cover; /* Ajusta el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+    background-color: #000; /* Color de fondo negro */
+}
+
+/* Estilo para bloques de código en el canal de datos y SDP */
+#data-channel pre, #SDP pre {
+    background-color: #1e1e1e; /* Color de fondo */
+    border: 1px solid #444; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    max-height: 250px; /* Altura máxima */
+    overflow-y: auto; /* Permite desplazamiento vertical */
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+    font-size: 0.9em; /* Tamaño de fuente */
+    color: #4a90e2; /* Color del texto */
+    margin: 0; /* Sin margen */
+    flex-grow: 1; /* Permite que crezca en el contenedor */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo para párrafos dentro del estado */
+#state p {
+    margin: 5px 0; /* Espaciado vertical */
+    color: #e0e0e0; /* Color del texto */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #part1, #part3 {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    body {
+        padding: 10px; /* Menos espaciado interno */
+    }
+
+    .option {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: flex-start; /* Alinea al inicio */
+    }
+
+    #video, #audio {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        max-height: 480px; /* Altura máxima */
+    }
+
+    #SDP {
+        min-height: auto; /* Sin altura mínima */
+        max-height: none; /* Sin altura máxima */
+    }
+}
